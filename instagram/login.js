@@ -1,10 +1,32 @@
-const loginButton = document.querySelector(".login-btn");
+document.addEventListener("DOMContentLoaded", () => {
+  function initLoginBtn() {
+    const loginButtonEl = document.querySelector(".login-btn");
+    if (!loginButtonEl) return;
 
-loginButton.addEventListener("click", function () {
-  const loginId = document.querySelector(".id").value;
-  const loginPassword = document.querySelector(".password").value;
+    const loginIdEl = document.querySelector(".id");
+    if (!loginIdEl) return;
 
-  loginId && loginPassword
-    ? (document.querySelector(".login-btn").style.backgroundColor = "blue")
-    : 0;
+    const loginPasswordEl = document.querySelector(".password");
+    if (!loginPasswordEl) return;
+
+    let idVal = "";
+    let pwVal = "";
+    function handleChangeLoginInput() {
+      if (idVal && pwVal) {
+        loginButtonEl.classList.add("enabled");
+      } else {
+        loginButtonEl.classList.remove("enabled");
+      }
+    }
+
+    loginIdEl.addEventListener("input", (e) => {
+      idVal = e.target.value;
+      handleChangeLoginInput();
+    });
+    loginPasswordEl.addEventListener("input", (e) => {
+      pwVal = e.target.value;
+      handleChangeLoginInput();
+    });
+  }
+  initLoginBtn();
 });

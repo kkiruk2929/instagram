@@ -1,0 +1,130 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.logo {
+  width: 24px;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+}
+.content nav {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 220px;
+  flex-shrink: 0;
+  border-right: 1px solid gray;
+  justify-content: center;
+}
+.content nav ul {
+  justify-content: space-between;
+}
+.content aside {
+  flex-basis: 250px;
+}
+.content main {
+  flex-basis: 500px;
+  flex-shrink: 0;
+}
+.list_story {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.list_story.story {
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: column;
+}
+.list_story.text_id {
+  display: flex;
+}
+
+.story a.follower_img {
+  flex: 2;
+}
+
+.story a.follower_img img {
+  width: 55px;
+  height: 55px;
+}
+.story .user_id p {
+  color: gray;
+}
+.my_profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.my_profile a.profile_img {
+  flex: 2;
+}
+
+.my_profile a.profile_img img {
+  width: 55px;
+  height: 55px;
+}
+
+.my_profile .my_id {
+  flex: 8;
+}
+
+.my_profile .my_id p {
+  color: gray;
+}
+.my_id > button {
+  flex: 2;
+  color: #0095f6;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+.recommends {
+  padding-bottom: 5px;
+}
+
+.recommend {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.recommend a.recommend_img {
+  flex: 2;
+}
+
+.recommend a.recommend_img img {
+  width: 45px;
+  height: 45px;
+}
+
+.recommend.user_id {
+  flex: 6;
+}
+
+.recommend .user_id p {
+  color: gray;
+}
+
+.recommend button {
+  flex: 2;
+  color: #0095f6;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+.menu ul li {
+  position: relative;
+  display: inline-block;
+  line-height: 1.5;
+  padding-right: 12px;
+}
+.menu ul li a {
+  color: gray;
+  font-size: 0.8em;
+}
+.star {
+  color: gray;
+  font-size: 0.8em;
+}
