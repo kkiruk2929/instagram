@@ -7,21 +7,23 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
+    <nav>
+      <div class="logo_box">
+        <img src="img/logo.png" alt="인스타로고" class="logo" />
+      </div>
+      <ul>
+        <li>홈</li>
+        <li>검색</li>
+        <li>탐색 탭</li>
+        <li>릴스</li>
+        <li>메시지</li>
+        <li>알림</li>
+        <li>만들기</li>
+        <li>프로필</li>
+      </ul>
+    </nav>
     <div class="container">
-      <section class="content">
-        <nav>
-          <ul>
-            <img src="img/logo.png" alt="인스타로고" class="logo" />
-            <li>홈</li>
-            <li>검색</li>
-            <li>탐색 탭</li>
-            <li>릴스</li>
-            <li>메시지</li>
-            <li>알림</li>
-            <li>만들기</li>
-            <li>프로필</li>
-          </ul>
-        </nav>
+      <div class="content-wrap">
         <main>
           <section class="list_story">
             <div class="story">
@@ -73,11 +75,34 @@
               </div>
             </div>
           </section>
-          <div class="feed">
-            피드게시물피드게시물피드게시물피드게시물피드게시물피드게시물피드게시물피드게시물드게시물피드게시물피드게시물피드게시물피드게시물
+
+          <!-- 피드 -->
+          <div class="feeds">
+            <div class="feed">
+              <div class="feed-header">
+                <div class="feed-header-icon"></div>
+                <div class="feed-header-name">이준</div>
+              </div>
+              <div class="feed-body">
+                <div class="feed-media-content"></div>
+              </div>
+              <div class="feed-footer">
+                <div class="feed-btns">
+                  <div class="feed-btn"></div>
+                  <div class="feed-btn"></div>
+                  <div class="feed-btn"></div>
+                </div>
+                <div class="feed-caption">
+                  <span class="username">kkiruk2929</span> 아이고야 힘들다.
+                </div>
+              </div>
+            </div>
           </div>
         </main>
+
+        <!-- 우측 친구 리스트 -->
         <aside>
+          <!-- 내 정보 -->
           <div class="my_profile">
             <a href="#" class="profile_img">
               <img
@@ -92,6 +117,8 @@
               <button type="button">전환</button>
             </div>
           </div>
+
+          <!-- 팔로워 리스트 -->
           <article class="widget recommends">
             <div class="widget_ttl">
               <div>회원님을 위한 추천</div>
@@ -158,7 +185,7 @@
           </nav>
           <p class="star">@ 2030 INSTAGRAM FROM META</p>
         </aside>
-      </section>
+      </div>
     </div>
   </body>
 </html>
