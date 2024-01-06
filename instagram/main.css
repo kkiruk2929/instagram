@@ -1,4 +1,4 @@
-/* box */
+/* box
 .box {
 }
 .box__item {
@@ -17,6 +17,7 @@
   height: 150px;
   background-color: blue;
 }
+*/
 
 /* feed */
 .feeds {
@@ -112,7 +113,77 @@ nav {
   height: 100vh;
   width: 230px;
 }
-
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  margin: 50px;
+}
+.navigation > .navigation-hoom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 230px;
+  height: 48px;
+}
+.navigation > .navigation-seach {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 230px;
+  height: 48px;
+}
+.navigation > .navigation-tap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 230px;
+  height: 48px;
+}
+.navigation > .navigation-reels {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 230px;
+  height: 48px;
+}
+.navigation > .navigation-massage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 230px;
+  height: 48px;
+}
+.navigation > .navigation-push {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 230px;
+  height: 48px;
+}
+.navigation > .navigation-make {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 230px;
+  height: 48px;
+}
+.navigation > .navigation-profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 230px;
+  height: 48px;
+}
 .container main {
   width: 630px;
 }
